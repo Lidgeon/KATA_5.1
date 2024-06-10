@@ -1,0 +1,156 @@
+.pricelist__header {
+  border-top: 1px solid rgba(217, 255, 245, 1);
+  background-image: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+  box-sizing: border-box;
+}
+
+.pricelist-card {
+  width: 260px;
+  height: 200px;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.pricelist-card__flex {
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.pricelist-card:first-child {
+  display: none;
+}
+
+.pricelist-card__title {
+  font-family: TT Lakes;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  color: rgba(126, 126, 130, 1);
+  padding-bottom: 4px;
+}
+
+.pricelist__submit-button {
+  position: absolute;
+  top: 152px;
+  left: 110px;
+  width: 114px;
+}
+
+.submit-button__text {
+  text-align: left;
+  padding-left: 2px;
+}
+
+.submit-button__text::after {
+  content: url('../img/go-arrow-white.svg');
+  vertical-align: baseline;
+  padding-right: 12px;
+  padding-left: 10px;
+}
+
+.price-disclaimer {
+  margin: 0 16px 40px 16px;
+}
+
+.commercial-offer {
+  font-family: TT Lakes;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-align: left;
+  color: rgba(27, 28, 33, 1);
+  font-weight: 600;
+}
+
+.commercial-offer::after {
+  content: url('../img/go-arrow-red.svg');
+  vertical-align: baseline;
+  padding-left: 10px;
+}
+
+.price-disclaimer__commercial-offer {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+.pricelist-card__title {
+  display: none;
+}
+
+.pricelist-list {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+}
+
+.pricelist-list__flex {
+  margin-top: 16px;
+}
+
+.pricelist-card {
+  width: 100%;
+  height: 64px;
+  background-color: white;
+  border-radius: 0;
+  
+}
+
+.pricelist-card:first-child {
+  display: block;
+}
+
+.pricelist-card__table-titles {
+  color: rgba(126, 126, 130, 1);
+}
+
+.pricelist-card:first-child {
+  background: none;
+  height: 48px;
+}
+
+.pricelist-card:nth-child(2) {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.pricelist-card:last-child {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.pricelist-card__flex {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 100px 100px 136px ;
+  
+}
+
+.pricelist-card:not(:first-child, :nth-child(2)) {
+  box-shadow: 16px 0px 0px 0px white inset, -16px 0px 0px 0px white inset, 
+  1px 2px 0px -1px rgba(234, 234, 234, 1) inset;
+
+}
+
+.pricelist-card__flex * {
+  align-self: center;
+}
+
+.pricelist__submit-button {
+  position: relative;
+  top: 0px;
+  left: 22px;
+  width: 114px;
+}
+}
+
+@media screen and (min-width: 1366px) {
+.pricelist-card__flex {
+  grid-template-columns: 1fr 210px 210px 154px ; 
+}
+}

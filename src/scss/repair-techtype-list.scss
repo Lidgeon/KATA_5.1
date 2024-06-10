@@ -1,0 +1,98 @@
+.repair-techtype-list__header {
+  border-top: 1px solid rgba(217, 255, 245, 1);
+  background-image: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+  box-sizing: border-box;
+}
+
+.techtype-list__flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 16px 16px 0 16px; 
+  gap: 16px; 
+}
+
+.techtype-button {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 1px 0px 0 0px rgba(234, 234, 234, 1),
+              -1px 0px 0 0px rgba(234, 234, 234, 1);
+  border-radius: 6px;
+  border-bottom: 1px solid rgba(234, 234, 234, 1);
+  border-top: 1px solid rgba(234, 234, 234, 1);
+  box-sizing: border-box;
+  width: 240px;      
+  height: 160px;
+}
+
+.techtype-button__flex {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.techtype-button__text {
+  align-self: flex-start;
+  margin-right: auto;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.techtype-text {
+  font-family: TT Lakes;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.techtype-button__go-icon {
+  height: 40px;
+  width: 40px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  background-image: url('../img/brend-go-arrow.svg');
+}
+
+.repair-techtype-list__show-all-button {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  margin-left: 32px;
+}
+
+@media screen and (min-width: 768px) {
+
+  .techtype-list__flex {
+    margin: 24px 24px 0 24px;
+    column-gap: 24px;
+    row-gap: 16px;
+  }
+
+  .techtype-button {
+    width: 224px;
+  }
+
+  .techtype-button:active .techtype-button__go-icon {
+    transform: scale(1.1);
+    transition: 150ms;
+  }
+
+}
+
+@media screen and (min-width: 1366px) {
+
+  .techtype-button:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+
+  .techtype-list__flex {
+    margin: 24px 32px 0 32px;
+    column-gap: 16px;
+  }
+
+  .techtype-button {
+    width: 240px;
+  }
+
+}

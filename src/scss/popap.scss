@@ -1,0 +1,122 @@
+.popap-title {
+  height: 40px;
+
+  font-family: TT Lakes;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  text-align: left;
+  color: rgba(27, 28, 33, 1);
+  font-weight: 700;
+}
+
+.popap-title::before {
+  content: url('../img/highlight.svg');
+  vertical-align: sub;
+  padding-right: 12px;
+}
+
+.popap-form {
+  position: absolute;
+  left: auto;
+  max-width: 440px;
+  max-height: 100vh;
+  min-height: 100vh;
+  
+}
+
+.popap-form__flex {
+  display: flex;
+  flex-direction: column; 
+  height: 100vh; 
+}
+
+.popap-form__close-button {
+  margin: 24px 0px 32px 16px;
+  width: 40px;
+}
+
+.popap-form__popap-title {
+  margin: 0 0 24px 0;
+}
+
+.popap-form__inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.popap-form__inputs * {
+  margin: 0 16px 16px 16px;
+  resize: none;
+  padding: 0 16px 0 16px;
+}
+
+.entry-field {
+  min-height: 48px;
+  border: 1px solid rgba(234, 234, 234, 1);
+  border-radius: 6px;
+}
+
+.entry-field::placeholder {
+  height: 30px;
+  font-family: TT Lakes;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: rgba(181, 182, 188, 1);
+}
+
+.message-field {
+  padding-top: 16px;
+}
+
+.popap-form__privacy-policy {
+  margin: 0 16px 19px 16px;
+}
+
+.privacy-policy {
+  font-family: TT Lakes;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  color: rgb(126, 126, 130);
+}
+
+.privacy-policy__link {
+  color: rgb(255, 62, 121);
+}
+
+.popap-form__submit {
+  text-align: right;
+  margin-right: 16px;
+}
+
+
+@media screen and (min-width: 768px) {
+
+.popap-form__close-button {
+  margin: 24px 0px 32px 24px;
+}
+}
+
+@media screen and (min-width: 1366px) {
+
+.popap-form {
+  overflow: visible;
+}
+
+.popap-form__popap-title {
+  margin-top: 32px;
+}
+
+.popap-form__close-button {
+  position: absolute;
+  right: 472px;
+  top: 6px;
+}
+
+.popap-form {
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+              -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+  }
+}

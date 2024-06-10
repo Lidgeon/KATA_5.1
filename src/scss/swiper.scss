@@ -1,0 +1,32 @@
+.swiper {
+  width: auto;
+  margin: 16px 0 52px 8px;
+  overflow: visible;
+}
+
+.swiper-slide {
+  margin-left: 8px;
+  box-sizing: border-box;
+  width: 240px;
+}
+
+.swiper-slide:last-child {
+  margin-right: 16px;
+}
+
+.swiper-pagination {
+  box-sizing: border-box;
+  margin-bottom: -40px;
+
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: rgba(221, 221, 221, 1);
+}
+
+.swiper-pagination-bullet-active {
+  background: rgba(181, 182, 188, 1);
+}

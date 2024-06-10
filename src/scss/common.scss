@@ -1,0 +1,209 @@
+body {
+  margin: 0px; 
+  font-family: 'TT Lakes';
+  font-size: 14px;
+  background-color: #F8F8F8;
+  height: 100%;
+}
+
+.container__position {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+  
+}
+
+/*кнопочки круглые*/
+.round-icon {
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.round-icon:active {
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+
+
+/*иконки*/
+
+.close-button__icon {
+  background-image: url('../img/close-icon.svg');
+}
+.search-button__icon {
+  background-image: url('../img/search-icon.svg');
+}
+.call-button__icon {
+  background-image: url('../img/call-icon.svg');
+}
+.chat-button__icon {
+  background-image: url('../img/chat-icon.svg');
+}
+.profile-button__icon {
+  background-image: url('../img/profile-icon.svg');
+}
+.main-menu-button__icon {
+  background-image: url('../img/menu-icon.svg');
+}
+.submit-application-button__icon {
+  background-image: url('../img/application-icon.svg');
+}
+.repair-status-button__icon {
+  background-image: url('../img/repair-status-icon.svg');
+}
+
+
+/*кнопка отправить/заказать*/
+
+.submit-button {
+  width: 136px;
+  height: 32px;
+  border-radius: 16px;
+  background: rgba(255, 62, 121, 1);
+
+  font-family: TT Lakes;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+.submit-button:active {
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+.submit-button__text {
+  margin: 4px 0 4px 8px;
+  text-align: left;
+  padding-left: 12px;
+}
+
+.submit-button__text::after {
+  content: url('../img/go-arrow-white.svg');
+  vertical-align: baseline;
+  padding-right: 16px;
+  padding-left: 14px;
+}
+
+
+/*Показать все / скрыть*/
+
+.show-all-button {
+  width: 160px;
+}
+
+.show-all-button__content {
+  font-family: TT Lakes;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-align: left;
+}
+
+.show-all-button__icon {
+  display: inline-block;
+  background-image: url('../img/arrow-more.svg');
+  height: 11px;
+  width: 8px;
+  margin-right: 16px;
+  margin-left: 8px;
+}
+
+.repair-brend-list__height-limiter {
+  max-height: 190px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.repair-techtype-list__height-limiter {
+  max-height: 190px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.open-status {
+  max-height: 600px;
+  transition: 1s;
+}
+
+.show-all-button__icon--mirror {
+  transform: scale(-1);
+}
+
+.show-all-button:active {
+  border-radius: 6px;
+  transition: 0.2s;
+  box-shadow: 0 0 0 1px rgb(0, 225, 255);
+  background-color: gray;
+}
+
+
+/*общие заголовки*/
+.page-title {  
+  height: 40px;
+  font-size: 28px;
+  letter-spacing: -0.6px;
+  color: rgba(27, 28, 33, 1);
+  font-weight: 700;
+}
+
+.section-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: rgba(126, 126, 130, 1);
+  padding: 16px;
+}
+
+.scroll-lock {
+  overflow: hidden;
+}
+
+dialog::backdrop {
+  backdrop-filter: blur(2px);
+}
+
+@media screen and (min-width: 768px) {
+.section-title {
+  padding: 16px 24px 16px 24px;
+}
+}
+
+
+@media screen and (min-width: 1366px) {
+
+.container__position {
+  display: flex;
+  background: linear-gradient(to right, rgb(255, 255, 255) 306px, #F8F8F8 306px)
+}
+
+.section-title {
+  padding: 16px 32px 16px 32px;
+}
+
+.round-icon:hover {
+  box-shadow: inset 0 0 100px 0 rgba(255, 255, 255, 0.5);
+  transition: 0.02s;
+}
+
+.submit-button:hover {
+  box-shadow: inset 0 0 100px 0 rgba(255, 255, 255, 0.5);
+  transition: 0.02s;
+}
+
+.show-all-button:hover {
+  border-radius: 6px;
+  transition: 0.2s;
+  box-shadow: 0 0 0 1px rgb(0, 225, 255);
+}
+}
